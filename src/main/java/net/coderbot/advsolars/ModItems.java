@@ -13,16 +13,18 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ModItems {
 
 	public static Item SUNNARIUM;
+	public static Item SUNNARIUM_ENRICHED;
 
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
-		System.out.println("REGISTER ITEMS");
-	   SUNNARIUM = register(event, "sunnarium");
+		SUNNARIUM = register(event, "sunnarium");
+		SUNNARIUM_ENRICHED = register(event, "sunnarium_enriched");
 	}
 
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
 		register(event, SUNNARIUM);
+		register(event, SUNNARIUM_ENRICHED);
 	}
 
 	private static Item register(RegistryEvent.Register<Item> event, String name) {
