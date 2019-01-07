@@ -1,0 +1,16 @@
+[
+{
+  "modid": "advsolars",
+  "name": "Advanced Solar Materials",
+  "description": "Addon for TechReborn adding more complex solar panel recipes",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["coderbot16"],
+  "credits": "The TechReborn developers for creating the base mod, and SeNtiMeL for creating the original advanced solar panels mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
