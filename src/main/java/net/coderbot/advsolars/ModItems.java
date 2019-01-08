@@ -14,17 +14,23 @@ public class ModItems {
 
 	public static Item SUNNARIUM;
 	public static Item SUNNARIUM_ENRICHED;
+	public static Item SUNNARIUM_PLATE;
+	public static Item SUNNARIUM_ENRICHED_PLATE;
 
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		SUNNARIUM = register(event, "sunnarium");
 		SUNNARIUM_ENRICHED = register(event, "sunnarium_enriched");
+		SUNNARIUM_PLATE = register(event, "sunnarium_plate");
+		SUNNARIUM_ENRICHED_PLATE = register(event, "sunnarium_enriched_plate");
 	}
 
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
 		register(event, SUNNARIUM);
 		register(event, SUNNARIUM_ENRICHED);
+		register(event, SUNNARIUM_PLATE);
+		register(event, SUNNARIUM_ENRICHED_PLATE);
 	}
 
 	private static Item register(RegistryEvent.Register<Item> event, String name) {
